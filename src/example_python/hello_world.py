@@ -1,2 +1,3 @@
-# python/hello_world.py
-print("Hello World from Python!")
+import hello_lib
+
+print(hello_lib.greet())

@@ -4,6 +4,7 @@ py_binary(
   main = "hello_world.py",
   # Explicitly set the entry point for Bazel to find it (by default it tries to find <name>.py, so if you don't add the main it
   # will look for hello_world_py.py which is not what we want)
+  visibility = ["//visibility:public"],  # Make this target public
 )
 
 py_library(

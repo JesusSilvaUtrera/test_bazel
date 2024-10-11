@@ -1,5 +1,5 @@
 #include "hello_lib.h"
 
-std::string get_hello() {
+std::string greet() {
     return "Hello from C++ Library!";
 }

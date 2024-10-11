@@ -1,2 +1,5 @@
-#Bazel build output
+# Bazel build output
 bazel-*
+
+# Python cache
+__pycache__/
