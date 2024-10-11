@@ -8,3 +8,5 @@ alias(
     name = "hello_py",
     actual = "//src/example_python:hello_world_py",
 )
+
+# alias are not working for test targets
