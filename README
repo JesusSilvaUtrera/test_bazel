@@ -1,1 +1,11 @@
 Repository to test how Bazel works to build and test projects automatically using different languages (Python and C++ currently).
+
+To add the dependencies needed for your python project:
+
+1. Create a venv: `python -m venv ./venv`
+2. Source it: `source venv/bin/activate`
+3. Install your requirements: `pip install -r 'path_to_requirements'`
+4. List the packages installed on the venv:. `pip freeze`
+5. Copy that list of packages to the `requirements_lock.txt`
+
+Now you can execute your python project, and all the required packages will be installed.
