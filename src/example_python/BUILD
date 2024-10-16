@@ -12,3 +12,14 @@ py_library(
     srcs = ["hello_lib.py"],
     visibility = ["//visibility:public"],  # Make the library available to other targets
 )
+
+# Load the requirements installed on the root MODULE.bazel from 'pip_deps'
+load("@pip_deps//:requirements.bzl", "requirement")
+py_test(
+    name = "test_hello",
+    srcs = ["test_hello.py"],
+    deps = [
+        ":hello_lib",  # Dependency on your Python greet library
+        requirement("pytest"),  # Add pytest as a dependency
+    ],
+)

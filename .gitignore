@@ -3,3 +3,6 @@ bazel-*
 
 # Python cache
 __pycache__/
+
+# Virtual env
+venv/
